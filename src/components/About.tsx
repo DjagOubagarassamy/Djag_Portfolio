@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SkillsGrid from './SkillsGrid';
 
 
 const About: React.FC = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -22,16 +24,15 @@ const About: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1" >
-            <h3 className="h3-title text-2xl font-semibold mb-4" data-aos="fade-up" data-aos-delay='100'>À propos de moi</h3>
+            <h3 className="h3-title text-2xl font-semibold mb-4" data-aos="fade-up" data-aos-delay='100'>{t('about')}</h3>
             <p className="text-white mb-6 font-semibold" data-aos="fade-up" data-aos-delay='10'>
-              Developpeur français passionné par la technologie et l'innovation, <br />
-              Auto-entrepreneur depuis 2021, Etudiant en Master Génie-Bio Informatique à l'Université de Poitiers
+              {t('about_desc1')}
             </p>
             <p className="text-white font-semibold" data-aos="fade-up">
-              Mon parcours en ingénierie logicielle a débuté pendant mes années universitaires, où j’ai acquis une solide base en fondamentaux de l’informatique. Depuis, j’ai travaillé sur divers projets, surtout au seins de petites start-ups.
+              {t('about_desc2')}
             </p>
             <p className="text-white font-semibold" data-aos="fade-up">
-              Je crois en l’importance d’écrire un code propre et maintenable, et j’apprends constamment de nouvelles technologies pour rester à la pointe de ce domaine en perpétuelle évolution.
+              {t('about_desc3')}
             </p>
 
 

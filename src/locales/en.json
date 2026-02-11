@@ -1,0 +1,12 @@
+{
+  "welcome": "Welcome to my portfolio!",
+  "about": "About",
+  "projects": "Projects",
+  "contact": "Contact",
+  "skills": "Skills"
+  ,"about_desc1": "French developer passionate about technology and innovation. Self-employed since 2022, Master's student in Physiological Engineering, Biotechnology and Computer Science at the University of Poitiers.",
+  "about_desc2": "My journey in software engineering began during my university years, where I acquired a solid foundation in computer science. Since then, I have worked on various projects, mainly in small startups.",
+  "about_desc3": "I believe in writing clean and maintainable code, and I am constantly learning new technologies to stay at the forefront of this ever-evolving field.",
+  "projects_desc": "Here are the projects I have worked on that required the most time. They reflect my skills and passion for web development.",
+  "contact_desc": "I am always looking for new opportunities and exciting projects. If you want to discuss a collaboration, a project, or just exchange ideas, feel free to contact me."
+}

@@ -1,0 +1,12 @@
+{
+  "welcome": "Bienvenue sur mon portfolio !",
+  "about": "À propos",
+  "projects": "Projets",
+  "contact": "Contact",
+  "skills": "Compétences"
+  ,"about_desc1": "Développeur français passionné par la technologie et l'innovation, auto-entrepreneur depuis 2022, étudiant en Master Génie Physiologique Biotechnologies et Informatique à l'Université de Poitiers.",
+  "about_desc2": "Mon parcours en ingénierie logicielle a débuté pendant mes années universitaires, où j’ai acquis une solide base en fondamentaux de l’informatique. Depuis, j’ai travaillé sur divers projets, surtout au sein de petites start-ups.",
+  "about_desc3": "Je crois en l’importance d’écrire un code propre et maintenable, et j’apprends constamment de nouvelles technologies pour rester à la pointe de ce domaine en perpétuelle évolution.",
+  "projects_desc": "Voici les projets sur lesquels j'ai travaillé et qui m'ont demandé le plus de temps. Ils reflètent mes compétences et ma passion pour le développement web.",
+  "contact_desc": "Je suis toujours à la recherche de nouvelles opportunités et de projets passionnants. Si vous souhaitez discuter d'une collaboration, d'un projet ou simplement échanger des idées, n'hésitez pas à me contacter."
+}

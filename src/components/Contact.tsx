@@ -1,15 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Mail, MapPin, Phone, Github, Linkedin } from 'lucide-react';
 
 const Contact: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section id="contact" className="py-20 bg-gray-900 text-white">
       <div className="container flex flex-col items-center mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Contactez-moi</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">{t('contact')}</h2>
           <div className="w-16 h-1 bg-purple-500 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Je suis toujours à la recherche de nouvelles opportunités et de projets passionnants. Si vous souhaitez discuter d'une collaboration, d'un projet ou simplement échanger des idées, n'hésitez pas à me contacter.
+            {t('contact_desc')}
           </p>
         </div>
 

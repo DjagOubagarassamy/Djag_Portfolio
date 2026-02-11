@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 type Skill = {
   name: string;
@@ -66,29 +67,32 @@ const skillCategories: SkillCategory[] = [
   },
 ];
 
-const SkillsGrid: React.FC = () => (
-  <div className="skills space-y-10" >
-    <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white" data-aos="fade-up" data-aos-delay='100'>Mes compétences</h2>
-    {skillCategories.map((cat) => (
-      <div key={cat.category}>
-        <h3 className="text-xl font-bold mb-4 text-white" data-aos="fade-up">{cat.category}</h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5">
-          {cat.skills.map((skill, i) => (
-            <div
-              key={skill.name}
-              className="flex items-center gap-3 rounded-xl bg-black shadow p-4 min-w-[160px] min-h-[70px]"
-              data-aos="fade-up"
-              data-aos-duration="400"
-              data-aos-delay={i * 100 }
-            >
-              <img src={skill.logo} alt={skill.name} className="w-10 h-10 object-contain" />
-              <span className="font-semibold text-white">{skill.name}</span>
-            </div>
-          ))}
+const SkillsGrid: React.FC = () => {
+  const { t } = useTranslation();
+  return (
+    <div className="skills space-y-10" >
+      <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white" data-aos="fade-up" data-aos-delay='100'>{t('skills')}</h2>
+      {skillCategories.map((cat) => (
+        <div key={cat.category}>
+          <h3 className="text-xl font-bold mb-4 text-white" data-aos="fade-up">{cat.category}</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5">
+            {cat.skills.map((skill, i) => (
+              <div
+                key={skill.name}
+                className="flex items-center gap-3 rounded-xl bg-black shadow p-4 min-w-[160px] min-h-[70px]"
+                data-aos="fade-up"
+                data-aos-duration="400"
+                data-aos-delay={i * 100 }
+              >
+                <img src={skill.logo} alt={skill.name} className="w-10 h-10 object-contain" />
+                <span className="font-semibold text-white">{skill.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    ))}
-  </div>
-);
+      ))}
+    </div>
+  );
+};
 
 export default SkillsGrid;

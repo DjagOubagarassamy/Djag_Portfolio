@@ -37,24 +37,13 @@ const LanguagePopup: React.FC<{ onSelect: (lang: string) => void }> = ({ onSelec
     );
   };
 
-  useEffect(() => {
-    // if (show) {
-    //   document.body.style.overflow = 'hidden';
-    // } else {
-    //   document.body.style.overflow = '';
-    // }
-  });
-
-  // Entry animation
-//   React.useEffect(() => {
-//     if (popupRef.current) {
-//       gsap.fromTo(
-//         popupRef.current,
-//         { y: 50, opacity: 0 },
-//         { y: 0, opacity: 1, duration: 0.5, ease: 'power2.out' }
-//       );
-//     }
-//   }, []);
+  // useEffect(() => {
+  //   // if (show) {
+  //   //   document.body.style.overflow = 'hidden';
+  //   // } else {
+  //   //   document.body.style.overflow = '';
+  //   // }
+  // });
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black bg-opacity-100" ref={popupRef}>

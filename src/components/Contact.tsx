@@ -8,15 +8,15 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-20 bg-gray-900 text-white">
       <div className="container flex flex-col items-center mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">{t('contact')}</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">{t('contact', { defaultValue: 'Contact' })}</h2>
           <div className="w-16 h-1 bg-purple-500 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            {t('contact_desc')}
+            {t('contact_desc', { defaultValue: 'Je suis toujours à la recherche de nouvelles opportunités et de projets passionnants. Si vous souhaitez discuter d\'une collaboration, d\'un projet ou simplement échanger des idées, n\'hésitez pas à me contacter.' })}
           </p>
         </div>
 
           <div className='container flex flex-col items-center mx-auto px-4 sm:px-6'>
-            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-semibold mb-6">{t('Contact_Info', { defaultValue: 'Mes informations' })}</h3>
             
             <div className="space-y-6">
               <div className="flex items-start">
@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
                   <Mail size={20} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium mb-1">Courrier</h4>
+                  <h4 className="text-lg font-medium mb-1">{t('Email', { defaultValue: 'Courrier' })}</h4>
                   <a href="mailto:hello@example.com" className="text-gray-300 hover:text-purple-400 transition-colors">
                     oubadjag@gmail.com
                   </a>
@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
                   <Phone size={20} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium mb-1">Téléphone</h4>
+                  <h4 className="text-lg font-medium mb-1">{t('Number', { defaultValue: 'Téléphone' })}</h4>
                   <a href="tel:+1234567890" className="text-gray-300 hover:text-purple-400 transition-colors">
                     +33 6 34 31 48 75
                   </a>
@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
                   <MapPin size={20} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium mb-1">Localisation</h4>
+                  <h4 className="text-lg font-medium mb-1">{t('localisation', { defaultValue: 'Localisation' })}</h4>
                   <p className="text-gray-300">
                     Poitiers, France
                   </p>
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
             </div>
             
             <div className="container flex flex-col items-center mx-auto px-4 sm:px-6 mt-12" >
-              <h3 className="text-2xl font-semibold mb-6">Réseaux sociaux</h3>
+              <h3 className="text-2xl font-semibold mb-6">{t('socials', {defaultValue: 'Réseaux sociaux'})}</h3>
               <div className="flex space-x-4">
                 <a 
                   href="https://github.com/DjagOubagarassamy" 

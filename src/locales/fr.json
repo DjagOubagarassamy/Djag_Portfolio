@@ -1,12 +1,57 @@
 {
-  "welcome": "Bienvenue sur mon portfolio !",
+  "Mon_nom": "Djag.",
+  "hero_desc1": "Développeur français passionné par la technologie et l'innovation.",
+  "hero_desc2": "Auto-entrepreneur depuis 2022, étudiant en Master Génie Physiologique Informatique & Biotechnologie à l'Université de Poitiers.",
+  "hero_hello": "Bonjour, je suis ",
+  "i_am": "Je suis un ",
+  "contact_me": "Contactez-moi",
+
   "about": "À propos",
   "projects": "Projets",
   "contact": "Contact",
-  "skills": "Compétences"
-  ,"about_desc1": "Développeur français passionné par la technologie et l'innovation, auto-entrepreneur depuis 2022, étudiant en Master Génie Physiologique Biotechnologies et Informatique à l'Université de Poitiers.",
+  "Tech_skills": "Compétences Techniques",
+  "expert_desc": "Cette étoile indique un niveau d'expertise avancé sur la technologie concernée.",
+  "languages": "Langages",
+  "BDD": "Base de données",
+  "frameworks": "Frameworks & Technologies",
+  "tools": "Outils",
+  "security": "Cybersécurité",
+
+
+  "about_desc1": "Développeur français passionné par la technologie et l'innovation, auto-entrepreneur depuis 2022, étudiant en Master Génie Physiologique Biotechnologies et Informatique à l'Université de Poitiers.",
   "about_desc2": "Mon parcours en ingénierie logicielle a débuté pendant mes années universitaires, où j’ai acquis une solide base en fondamentaux de l’informatique. Depuis, j’ai travaillé sur divers projets, surtout au sein de petites start-ups.",
   "about_desc3": "Je crois en l’importance d’écrire un code propre et maintenable, et j’apprends constamment de nouvelles technologies pour rester à la pointe de ce domaine en perpétuelle évolution.",
   "projects_desc": "Voici les projets sur lesquels j'ai travaillé et qui m'ont demandé le plus de temps. Ils reflètent mes compétences et ma passion pour le développement web.",
-  "contact_desc": "Je suis toujours à la recherche de nouvelles opportunités et de projets passionnants. Si vous souhaitez discuter d'une collaboration, d'un projet ou simplement échanger des idées, n'hésitez pas à me contacter."
+  
+  
+  "Entreprise": "Entreprise",
+  "Client": "Client",
+  "pro": "Professionnel",
+  "particulier": "Particulier",
+  "online": "en ligne",
+  "offline": "hors ligne",
+
+  "HPMat_title": "Banque de données HPMat",
+  "HPmat_desc": "HPMat est une banque de données à destination des chercheurs en chimie quantique théorique, dans lequelle on peut consulter, visualiser et télécharger des données. Il s'agit d'une application full-stack réalisée avec React pour le front-end, Node.js pour l'API REST et Mysql pour la base de données.",
+
+  "Lydae_title": "Plateforme E-Commerce Lydae",
+  "Lydae_desc": "Lydae Shop est un site e-commerce complet conçu pour une entreprise de textile comprenant : un front-end utilisateur, une API REST dédiée et une base de données MongoDB. Il intègre un système de paiement fonctionnel via Stripe.",
+  
+  "House24_title": "Site Vitrine House24",
+  "House24_desc": "House 24 est un site vitrine conçu pour une entreprise de restauration. Il propose un mécanisme de réservation et, surtout, un rendu 3D sur la page d’accueil réalisé avec Three.js.",
+
+  "Dearbot_title": "Programme d'automatisation \"DearBot\"",
+  "Dearbot_desc": "DearBot est un bot Python développé pour un serveur Discord de revente. Il est réalisé avec BeautifulSoup 4 et Discord.js et inclut un contournement de Cloudflare. Connecté à l’API Vinted, il permet de récupérer les articles plus rapidement.",
+
+  "Basalt_title": "Site Vitrine \"Basalt COD\"",
+  "Basalt_desc": "Basalt COD est un site vitrine conçu pour une entreprise de developpement de jeux vidéos, créé pour le lancement de ce jeu mobile. Il intègre des animations dynamiques, réalisées avec SVGator et GSAP, spécialement pour le défilement horizontal.",
+  
+  "contact_desc": "Je suis toujours à la recherche de nouvelles opportunités et de projets passionnants. Si vous souhaitez discuter d'une collaboration, d'un projet ou simplement échanger des idées, n'hésitez pas à me contacter.",
+  "socials": "Réseaux sociaux",
+  "Contact_Info": "Mes informations",
+  "Email": "Courrier",
+  "Number": "Téléphone",
+  "localisation": "Localisation",
+
+  "footer": "Conçue avec passion & précision."
 }

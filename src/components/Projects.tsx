@@ -7,9 +7,9 @@ interface Project {
   description: string;
   image: string;
   tags: string[];
-  status: 'en ligne' | 'hors ligne';
+  status: string;
   companyName: string;
-  clientType: 'professionnel' | 'particulier';
+  clientType: string;
   date: string;
   liveLink?: string;
   githubLink?: string;
@@ -25,58 +25,58 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Banque de données "HPMat"',
-      description: "HPMat est une banque de données à destination des chercheurs en chimie quantique théorique, dans lequelle on peut consulter, visualiser et télécharger des données. Il s'agit d'une application full-stack réalisée avec React pour le front-end, Node.js pour l'API REST et Mysql pour la base de données.",
+      title: t('HPMat_title', { defaultValue: 'Banque de données HPMat' }),
+      description: t('HPmat_desc', { defaultValue: "HPMat est une banque de données à destination des chercheurs en chimie quantique théorique, dans lequelle on peut consulter, visualiser et télécharger des données. Il s'agit d'une application full-stack réalisée avec React pour le front-end, Node.js pour l'API REST et Mysql pour la base de données." }),
       image: '/data/HPMat_logo.png',
       tags: ['Full-Stack', 'React', 'Node.js', 'MySQL', 'JavaScript', 'Python', 'API REST', 'Librairies Python & JS'],
-      status: 'en ligne',
+      status: t('online', { defaultValue: 'en ligne' }),
       companyName: 'IC2MP, CNRS',
-      clientType: 'professionnel',
+      clientType: t('pro', { defaultValue: 'professionnel' }),
       date: '2026',
       projectLink: 'https://hpmat.org',
     },
     {
       id: 2,
-      title: 'Plateforme E-Commerce "Lydae"',
-      description: "Lydae Shop est un site e-commerce complet conçu pour une entreprise de textile comprenant : un front-end utilisateur, une API REST dédiée et une base de données MongoDB. Il intègre un système de paiement fonctionnel via Stripe.",
+      title: t('Lydae_title', { defaultValue: 'Plateforme E-Commerce Lydae' }),
+      description: t('Lydae_desc', { defaultValue: "Lydae Shop est un site e-commerce complet conçu pour une entreprise de textile comprenant : un front-end utilisateur, une API REST dédiée et une base de données MongoDB. Il intègre un système de paiement fonctionnel via Stripe." }),
       image: '/data/Lydae.png',
       tags: ['Full-Stack', 'React', 'Node.js', 'JavaScript', 'MongoDB', 'Stripe'],
-      status: 'hors ligne',
+      status: t('offline', { defaultValue: 'hors ligne' }),
       companyName: 'T.mxsis',
-      clientType: 'professionnel',
+      clientType: t('pro', { defaultValue: 'professionnel' }),
       date: '2023',
     },
     {
       id: 3,
-      title: 'Site Vitrine "House24"',
-      description: 'House 24 est un site vitrine conçu pour une entreprise de restauration. Il propose un mécanisme de réservation et, surtout, un rendu 3D sur la page d’accueil réalisé avec Three.js.',
+      title: t('House24_title', { defaultValue: 'Site Vitrine House24' }),
+      description: t('House24_desc', { defaultValue: 'House 24 est un site vitrine conçu pour une entreprise de restauration. Il propose un mécanisme de réservation et, surtout, un rendu 3D sur la page d’accueil réalisé avec Three.js.' }),
       image: '/data/House24.png',
       tags: ['Front-end', 'React', 'Three.js', 'Tailwind CSS', 'GSAP'],
-      status: 'hors ligne',
+      status: t('offline', { defaultValue: 'hors ligne' }),
       companyName: 'House24',
-      clientType: 'professionnel',
+      clientType: t('pro', { defaultValue: 'professionnel' }),
       date: '2022',
     },
     {
       id: 4,
-      title: 'Programme d’automatisation "DearBot"',
-      description: 'DearBot est un bot Python développé pour un serveur Discord de revente. Il est réalisé avec BeautifulSoup 4 et Discord.js et inclut un contournement de Cloudflare. Connecté à l’API Vinted, il permet de récupérer les articles plus rapidement.',
+      title: t('Dearbot_title', { defaultValue: 'Programme d\'automatisation "DearBot"' }),
+      description: t('Dearbot_desc', { defaultValue: 'DearBot est un bot Python développé pour un serveur Discord de revente. Il est réalisé avec BeautifulSoup 4 et Discord.js et inclut un contournement de Cloudflare. Connecté à l’API Vinted, il permet de récupérer les articles plus rapidement.' }),
       image: '/data/Dearbot.png',
       tags: ['Back-End','JavaScript', 'API', 'Web Scraping', 'Discord.js', 'BeautifulSoup4'],
-      status: 'hors ligne',
+      status: t('offline', { defaultValue: 'hors ligne' }),
       companyName: 'Discord Server',
-      clientType: 'particulier',
+      clientType: t('particulier', { defaultValue: 'particulier' }),
       date: '2022',
     },
     {
       id: 5,
-      title: 'Site Vitrine "Basalt COD"',
-      description: 'Basalt COD est un site vitrine conçu pour une entreprise de developpement de jeux vidéos, créé pour le lancement de ce jeu mobile. Il intègre des animations dynamiques, réalisées avec SVGator et GSAP, spécialement pour le défilement horizontal.',
+      title: t('Basalt_title', { defaultValue: 'Site Vitrine "Basalt COD"' }),
+      description: t('Basalt_desc', { defaultValue: 'Basalt COD est un site vitrine conçu pour une entreprise de developpement de jeux vidéos, créé pour le lancement de ce jeu mobile. Il intègre des animations dynamiques, réalisées avec SVGator et GSAP, spécialement pour le défilement horizontal.' }),
       image: '/data/Basalt.png',
       tags: ['Front-end', 'Gsap', 'SvgAtor', 'HTML', 'CSS', 'JavaScript'],
-      status: 'hors ligne',
+      status: t('offline', { defaultValue: 'hors ligne' }),
       companyName: 'NGED',
-      clientType: 'professionnel',
+      clientType: t('pro', { defaultValue: 'professionnel' }),
       date: '2022',
     },
   ];
@@ -137,7 +137,7 @@ const Projects: React.FC = () => {
                     alt={project.title} 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <span className={`absolute top-3 left-3 z-10 text-xs font-semibold px-2 py-1 rounded-full ${project.status === 'en ligne' ? 'bg-green-800 text-white' : 'bg-red-800 text-white'}`}
+                  <span className={`absolute top-3 left-3 z-10 text-xs font-semibold px-2 py-1 rounded-full ${project.status === t('online', { defaultValue: 'en ligne' }) ? 'bg-green-800 text-white' : 'bg-red-800 text-white'}`}
                   >{project.status.charAt(0).toUpperCase() + project.status.slice(1)}</span>
                   <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                     {project.liveLink && (
@@ -169,8 +169,8 @@ const Projects: React.FC = () => {
                     <h3 className="text-xl font-semibold">{project.title}</h3>
                   </div>
                   <div className="flex items-center gap-4 mb-2">
-                    <span className="text-sm text-gray-300 font-medium">Entreprise : <span className="font-semibold">{project.companyName}</span></span>
-                    <span className="text-sm text-gray-300 font-medium">Client : <span className="font-semibold">{project.clientType}</span></span>
+                    <span className="text-sm text-gray-300 font-medium">{t("Entreprise", {defaultValue: "Entreprise"})} : <span className="font-semibold">{project.companyName}</span></span>
+                    <span className="text-sm text-gray-300 font-medium">{t("Client", {defaultValue: "Client"})} : <span className="font-semibold">{project.clientType}</span></span>
                   </div>
                   <p className="text-gray-400 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">

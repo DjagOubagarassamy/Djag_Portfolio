@@ -1,12 +1,56 @@
 {
-  "welcome": "Welcome to my portfolio!",
+
+  "hero_desc1": "French developer passionate about technology and innovation.",
+  "hero_desc2": "Self-employed since 2022, Master's student in Physiological Engineering, Biotechnology and Computer Science at the University of Poitiers.",
+  "hero_hello": "Hello, I'm ",
+  "i_am": "I am a ",
+
+
   "about": "About",
   "projects": "Projects",
   "contact": "Contact",
-  "skills": "Skills"
-  ,"about_desc1": "French developer passionate about technology and innovation. Self-employed since 2022, Master's student in Physiological Engineering, Biotechnology and Computer Science at the University of Poitiers.",
+  "contact_me": "Contact Me",
+  "Tech_skills": "Technical Skills",
+  "expert_desc": "This star indicates an advanced level of expertise in the relevant technology.",
+  "languages": "Languages",
+  "frameworks": "Frameworks & Technologies",
+  "BDD": "Database",
+  "tools": "Tools",
+  "security": "Cybersecurity",
+  "about_desc1": "French developer passionate about technology and innovation. Self-employed since 2022, Master's student in Physiological Engineering, Biotechnology and Computer Science at the University of Poitiers.",
   "about_desc2": "My journey in software engineering began during my university years, where I acquired a solid foundation in computer science. Since then, I have worked on various projects, mainly in small startups.",
   "about_desc3": "I believe in writing clean and maintainable code, and I am constantly learning new technologies to stay at the forefront of this ever-evolving field.",
+  
+  
   "projects_desc": "Here are the projects I have worked on that required the most time. They reflect my skills and passion for web development.",
-  "contact_desc": "I am always looking for new opportunities and exciting projects. If you want to discuss a collaboration, a project, or just exchange ideas, feel free to contact me."
+  "Entreprise": "Company",
+  "Client": "Client",
+  "pro": "Professional",
+  "particulier": "Individual",
+  "online": "Online",
+  "offline": "Offline",
+
+  "HPMat_title": "HPMat Database",
+  "HPmat_desc": "HPMat is a database for researchers in theoretical quantum chemistry, where you can consult, visualize, and download data. It is a full-stack application built with React for the front-end, Node.js for the REST API, and MySQL for the database.",
+
+  "Lydae_title": "Lydae E-Commerce Platform",
+  "Lydae_desc": "Lydae Shop is a complete e-commerce site designed for a textile company, including a user front-end, a dedicated REST API, and a MongoDB database. It integrates a functional payment system via Stripe.",
+  
+  "House24_title": "House24 Showcase Site",
+  "House24_desc": "House 24 is a showcase site designed for a catering company. It offers a reservation mechanism and, above all, a 3D rendering on the homepage created with Three.js.",
+
+  "Dearbot_title": "\"DearBot\" Automation Program",
+  "Dearbot_desc": "DearBot is a Python bot developed for a resale Discord server. It is built with BeautifulSoup 4 and Discord.js and includes a Cloudflare bypass. Connected to the Vinted API, it allows for faster retrieval of items.",
+
+  "Basalt_title": "\"Basalt COD\" Showcase Site",
+  "Basalt_desc": "Basalt COD is a showcase site designed for a video game development company, created for the launch of this mobile game. It features dynamic animations, created with SVGator and GSAP, specifically for horizontal scrolling.",
+
+  "contact_desc": "I am always looking for new opportunities and exciting projects. If you want to discuss a collaboration, a project, or just exchange ideas, feel free to contact me.",
+  "Contact_Info": "Contact Information",
+  "socials": "Social Networks",
+  "localisation": "Localization",
+  "Number": "Phone Number",
+  "Email": "Email",
+
+  "footer": "Crafted with passion & precision."
 }
